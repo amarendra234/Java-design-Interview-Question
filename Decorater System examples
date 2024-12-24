@@ -1,0 +1,101 @@
+1. Payment Gateway System
+Requirements:
+Add dynamic features like discounts, taxes, and currency conversion to payment transactions.
+Allow chaining of these features without modifying the core transaction logic.
+Example:
+A transaction starts with a base amount.
+Apply a TaxDecorator to add 10% tax.
+Apply a DiscountDecorator to subtract 5% discount.
+Apply a CurrencyConversionDecorator to convert the amount to USD.
+
+
+2. Logging Framework
+Requirements:
+Extend logging functionality dynamically by adding features like timestamp, log level, or formatting.
+Support chaining multiple log enhancements.
+Example:
+A basic logger logs plain text.
+Add a TimestampDecorator to prepend timestamps.
+Add a LogLevelDecorator to include error, warning, or info levels.
+Add a JsonFormatterDecorator to output logs in JSON format.
+
+3. Gaming Character Customization
+Requirements:
+Dynamically equip items like weapons, shields, or potions to modify a character's stats.
+Allow stacking or removing items during gameplay.
+Example:
+A character has base attack and defense stats.
+Equip a SwordDecorator to increase attack by 20.
+Add a ShieldDecorator to increase defense by 15.
+Add a FireResistanceDecorator for elemental immunity.
+
+4.Video Streaming Service
+Requirements:
+Add features like advertisements, subtitles, or different video qualities at runtime.
+Keep the video-playing functionality modular.
+Example:
+A basic video stream plays a standard-quality video.
+Add an AdvertisementDecorator to insert ads.
+Add a SubtitlesDecorator to overlay subtitles.
+Add a HDQualityDecorator to enable HD streaming.
+
+5. Chat Messaging System
+Requirements:
+Extend message functionality by adding encryption, compression, or delivery tracking dynamically.
+Ensure modularity for these features.
+Example:
+A message starts as plain text.
+Add an EncryptionDecorator to encrypt the message.
+Add a CompressionDecorator to reduce its size.
+Add a DeliveryReceiptDecorator to track message delivery.
+
+6. E-commerce Pricing System
+Requirements:
+Add features like seasonal discounts, shipping charges, and gift wrap fees to a base price.
+Allow chaining multiple pricing rules dynamically.
+Example:
+A product starts with a base price of $100.
+Apply a DiscountDecorator to deduct 20%.
+Add a ShippingChargeDecorator to add $5 shipping.
+Add a GiftWrapDecorator to add $3 for gift wrapping.
+
+7. Notification System
+Requirements:
+Add features like email notifications, SMS alerts, and push notifications dynamically.
+Support sending notifications through multiple channels.
+Example:
+A notification starts as a plain text message.
+Add an EmailDecorator to send it via email.
+Add an SMSDecorator to send it via SMS.
+Add a PushNotificationDecorator for mobile app alerts.
+
+8. Image Processing Application
+Requirements:
+Apply effects like grayscale, watermarking, and resizing to images dynamically.
+Support chaining multiple effects.
+Example:
+A basic image is loaded.
+Add a GrayscaleDecorator to make the image black-and-white.
+Add a WatermarkDecorator to overlay a logo.
+Add a ResizeDecorator to adjust the image dimensions.
+
+9. Restaurant Billing System
+Requirements:
+Add charges like service tax, tip, and loyalty discounts dynamically to a bill.
+Keep billing logic extensible and modular.
+Example:
+A bill starts with a base amount of $50.
+Add a ServiceTaxDecorator to add 10%.
+Add a TipDecorator to add 15%.
+Add a LoyaltyDiscountDecorator to deduct 5%.
+
+10. File Management System
+Requirements:
+Add features like encryption, compression, and virus scanning to files before saving.
+Support chaining multiple features dynamically.
+Example:
+A file is created with plain text content.
+Add an EncryptionDecorator to encrypt the file.
+Add a CompressionDecorator to compress it.
+Add a VirusScanDecorator to ensure it's malware-free.
+
